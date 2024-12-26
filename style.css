@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +27,7 @@ h1 {
 
 .clock {
     display: flex;
+    align-items: end;
 }
 
 .clock div {
@@ -33,8 +35,9 @@ h1 {
 }
 
 .bg {
-    background: linear-gradient(0deg, rgba(3,0,255,1) 10%, rgb(3, 0, 95) 90%);
-    position: relative; /*Allow elements inside this use Absolute position*/
+    background: linear-gradient(0deg, rgba(3, 0, 255, 1) 10%, rgb(3, 0, 95) 90%);
+    position: relative;
+    /*Allow elements inside this use Absolute position*/
     border-radius: 0px 20px;
 }
 
@@ -60,7 +63,6 @@ h1 {
 }
 
 .clock #ampm {
-    position: absolute;
     background-color: rgb(202, 227, 255);
     bottom: 0;
     color: rgb(3, 0, 95);
@@ -69,7 +71,7 @@ h1 {
     height: 50px;
     opacity: .8;
     font-size: 45px;
-    border-radius: 20px 0px;    
+    border-radius: 20px 0px;
 }
 
 @media screen and (max-width: 600px) {
@@ -89,13 +91,13 @@ h1 {
         height: 50px;
         font-size: 40px;
     }
-    
+
     .clock #ampm {
         width: 50px;
         height: 30px;
         font-size: 20px;
-        border-radius: 20px 0px;    
+        border-radius: 20px 0px;
     }
-    
-    
-  }
+
+
+}
